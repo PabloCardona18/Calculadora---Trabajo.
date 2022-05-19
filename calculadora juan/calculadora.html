@@ -65,8 +65,8 @@
         var multiplicar = false;
         var divisiones = false;
         var sin = false;
-        var cosenon = false;
-        var tangenten = false;
+        var cos = false;
+        var tan = false;
         var raizcua = false;
 
 
@@ -127,14 +127,14 @@
             sumatoria = (cantidad);
             document.getElementById("display").value = sumatoria;
             cantidad = "";
-            cosenon = true;
+            cos = true;
         }
 
         function tangente() {
             sumatoria = (cantidad);
             document.getElementById("display").value = sumatoria;
             cantidad = "";
-            tangenten = true;
+            tan = true;
         }
 
         function Igual() {
@@ -150,14 +150,14 @@
             if (divisiones == true) {
                 document.getElementById("display").value = sumatoria / parseFloat(cantidad)
             }
-            if (cosenon == true) {
+            if (cos == true) {
                 document.getElementById("display").value = Math.cos(cantidad * Math.PI / 180)
             }
             if (sin == true) {
                 document.getElementById("display").value = Math.sin(cantidad * Math.PI / 180);
 
             }
-            if (tangenten == true) {
+            if (tan == true) {
                 document.getElementById("display").value = Math.tan(cantidad * Math.PI / 180);
 
             }
